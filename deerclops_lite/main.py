@@ -6,10 +6,10 @@ import discord
 import re
 from deerclops import Deerclops
 from hooks import ProxyBot
+import sys
 
 # Transfers stdout to specific files 
 if settings.release_version:
-    import sys
     sys.stdout = open("/tmp/carrat_main.out", "w")
     sys.stderr = open("/tmp/carrat_main.err", "w")
 
