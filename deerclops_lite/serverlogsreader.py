@@ -22,7 +22,19 @@ class ServerLogsReader(list):
     def checkLog(self, data, isCave):
         for msg in re.findall(RE_DFTA, data):
             if msg: 
-                x = json.loads(msg)
+                try:
+                    x = json.loads(msg)
+                except Exception as e:
+                    msg = msg.replace("\\'", "'")
+                    try:
+                        x = json.loads(msg)
+                    except Exception as e:
+                        print("JSON FAILED:")
+                        print(msg)
+                        print("Error:")
+                        print(e)
+                        print("--------------")
+                        continue
                 x['cavelog'] = isCave
                 self.append(x)
                 #print(x)
