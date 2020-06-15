@@ -56,6 +56,7 @@ icon = {
     'wormwood' : ':grey_question:',
     'wurt' : ':grey_question:', 
 
+    'walter' : ':grey_question:', 
     # Misc. 
     'minerhat' : ':question:',
 
