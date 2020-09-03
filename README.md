@@ -8,7 +8,7 @@ Discord bot that prints current status in Don't Starve Together server. The bot 
 - Linux
 - Python 3.6 or newer
 - Discord library for Python `pip3 install discord`
-- Server mod [DFT Announcer Lite](https://github.com/IamFlea/DFT-Announcer-Lite "DFT Announcer mod") which extends the DST logs
+- Server mod [Deerclops-Lite-Logger](https://github.com/IamFlea/Deerclops-Lite-Logger "DFT Announcer mod") which extends the DST logs
 ### Installation
 - [Get Discord token](https://discordapp.com/developers/)
 - Download this mod
